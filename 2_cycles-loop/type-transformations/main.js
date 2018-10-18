@@ -14,6 +14,7 @@ var h = 8;
 
 var c = t && h && 9;
 console.log(c); // false
+// тут результат будет 0
 
 // 3 task
 var pr = 9;
@@ -21,6 +22,7 @@ var g = 0;
 
 var tra = (g || pr) && 9;
 console.log(tra); // false
+// тут тоже результат будет 0
 
 // 4 task
 var i = '1';
@@ -33,6 +35,7 @@ console.log((m - j) == j); // false
 console.log((m - j) === j); //false
 
 (m - 6) && j && console.log('Hi'); // true
+// тут тоже результат будет 'Hi'
 
 // 5 task
 var obj = {
