@@ -13,7 +13,7 @@ var t = 0;
 var h = 8;
 
 var c = t && h && 9;
-console.log(c); // false
+console.log(c); // 0
 // тут результат будет 0
 
 // 3 task
@@ -21,7 +21,7 @@ var pr = 9;
 var g = 0;
 
 var tra = (g || pr) && 9;
-console.log(tra); // false
+console.log(tra); // 0
 // тут тоже результат будет 0
 
 // 4 task
@@ -34,7 +34,7 @@ console.log((m - j) == j); // false
 (m - j) === j;
 console.log((m - j) === j); //false
 
-(m - 6) && j && console.log('Hi'); // true
+(m - 6) && j && console.log('Hi'); // Hi
 // тут тоже результат будет 'Hi'
 
 // 5 task
