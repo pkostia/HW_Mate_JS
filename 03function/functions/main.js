@@ -81,6 +81,7 @@ function union(arr) {
 	return Object.keys(obj);
 }
 console.log(union([1, 2, 3], [101, 2, 1, 10], [2, 1]));
+// все как бы правильно но все числа превращаються в строки что не есть гуд(
 
 // 9 task
 function flatten(array) {
