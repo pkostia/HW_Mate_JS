@@ -18,6 +18,7 @@ function removeEmptyElements(arr){
 	return newArr;
 }
 var y = removeEmptyElements([1,2,,3,,3,null,,0,,undefined,4,,4,,5,,6,,,,]);
+ // please add recursion so if the inside element is an array it also will be checked and delete empty elements
 console.log(y);
 
 //4 task
