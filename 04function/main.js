@@ -14,12 +14,17 @@ console.log(c);//4
 
 //3 task
 function removeEmptyElements(arr){
-	var newArr = arr.filter(function(n){ return n != undefined });
-	return newArr;
+	var newArr = [];
+	for (var i = 0; i < arr.length; i++) {
+		if(Array.isArray(arr[i])){
+			arr[i] = removeEmptyElements(arr[i]);
+		}else if(arr[i] === undefined){
+			newArr = arr.slice(0, i).concat(arr.slice(i+1));
+			arr = newArr;
+		}
+	}
+	return arr;
 }
-var y = removeEmptyElements([1,2,,3,,3,null,,0,,undefined,4,,4,,5,,6,,,,]);
- // please add recursion so if the inside element is an array it also will be checked and delete empty elements
-console.log(y);
 
 //4 task
 function sortReverse(arr){
